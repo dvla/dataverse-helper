@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Integrate Microsoft Dataverse Web API to your project"
   spec.description = "This gem helps you integrate Microsoft Dataverse Web API to your ruby project"
-  spec.homepage = "https://bitbucket.tooling.dvla.gov.uk/projects/QE/repos/dvla-dataverse-helper"
+  spec.homepage = "https://github.com/dvla/dataverse-helper"
   spec.required_ruby_version = ">= 2.6.0"
   spec.metadata["homepage_uri"] = spec.homepage
 
