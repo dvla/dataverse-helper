@@ -3,7 +3,7 @@
 module Dvla
   module Dataverse
     module Helper
-      VERSION = "0.1.1"
+      VERSION = "0.1.2"
     end
   end
 end

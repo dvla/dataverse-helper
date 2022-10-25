@@ -1,0 +1,28 @@
+name: Run Tests
+
+on:
+  push
+  
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['3.0']
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Ruby 3.0
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 3.0.x
+    
+    - name: run unit tests
+      run: |
+        gem install bundler
+        cd /home/runner/work/dataverse-helper/dataverse-helper
+        bundle install -j10 --quiet
+        bundle exec rspec
