@@ -22,4 +22,4 @@ jobs:
       run: |
         gem install bundler
         cd /home/runner/work/dataverse-helper
-        bundle install -j10
+        ls
