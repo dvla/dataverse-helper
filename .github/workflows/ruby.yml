@@ -14,9 +14,11 @@ jobs:
         ruby-version: ['2.7']
 
     steps:
-    - uses: ruby/setup-ruby-pkgs@v1
+    - uses: actions/checkout@v3
+    - name: Set up Ruby 3.0
+      uses: actions/setup-ruby@v1
       with:
-        ruby-version: 3.0 
+        ruby-version: 3.0.x
     
     - name: run unit tests
       run: |
