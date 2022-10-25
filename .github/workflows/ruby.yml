@@ -4,7 +4,7 @@ on:
   push
   
 permissions:
-  contents: read
+  contents: read|write|none
 
 jobs:
   test:
@@ -12,14 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['3.0']
+        ruby-version: ['2.7']
 
     steps:
-    - name: Install bundle
-      run: gem install bundler
-      
-    - name: Install gems
-      run: bundle install -j10
-      
     - name: Run tests
-      run: bundle exec rspec
+      run: |
+        gem install bundler
+        bundle install --jobs 4 --retry 3
+        bundle exec rspec
