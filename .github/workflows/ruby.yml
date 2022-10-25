@@ -24,4 +24,5 @@ jobs:
       run: |
         gem install bundler
         cd /home/runner/work/dataverse-helper/dataverse-helper
-        ls
+        bundle install -j10
+        bundle exec rspec
