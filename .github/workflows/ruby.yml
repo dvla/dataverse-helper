@@ -8,14 +8,17 @@ permissions:
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
     strategy:
       matrix:
         ruby-version: ['2.7']
 
     steps:
-    - name: Run tests
+    - uses: ruby/setup-ruby-pkgs@v1
+      with:
+        ruby-version: 3.0 
+    
+    - name: run unit tests
       run: |
         gem install bundler
         bundle install --jobs 4 --retry 3
