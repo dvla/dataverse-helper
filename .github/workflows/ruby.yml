@@ -21,5 +21,6 @@ jobs:
     - name: run unit tests
       run: |
         gem install bundler
+        ls
         bundle install --jobs 4 --retry 3
         bundle exec rspec
