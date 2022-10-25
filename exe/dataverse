@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'colorize'
+
+setting_file = <<SETTING_FILE
+dataverse:
+    authorize_url:
+    token_url:
+    client_id:
+    client_secret:
+    scope:
+    operations:
+      base_url:
+      service_check_url:
+
+SETTING_FILE
+
+puts ">> Go to setting.yml to update the configuration".colorize(:blue)
+
+Dir.mkdir('./config') unless File.exists?('./config')
+File.open('./config/dataverse.yml', 'w') { |f| f.write(setting_file) }
+

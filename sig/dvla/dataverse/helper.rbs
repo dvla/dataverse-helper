@@ -1,0 +1,8 @@
+module Dvla
+  module Dataverse
+    module Helper
+      VERSION: String
+      # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+    end
+  end
+end
