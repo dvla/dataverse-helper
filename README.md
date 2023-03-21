@@ -5,6 +5,9 @@
 ## Dvla Dataverse Helper
 ##### _Integrate Microsoft Dataverse Web API to your Ruby project_
 
+[![Ruby](https://badgen.net/badge/icon/ruby?icon=ruby&label)](https://https://ruby-lang.org/)
+![Tests](https://github.com/dvla/dataverse-helper/actions/workflows/run_unit_tests.yml/badge.svg)
+![Last Deployment](https://github.com/dvla/dataverse-helper/actions/workflows/gem_publish.yml/badge.svg)
 
 Thank you for using DVLA Dataverse Helper gem. This gem helps you integrate with Microsoft Dynamics using Microsoft Dataverse Web API. You can create, retrieve, delete or update a record without worrying about authentications as it's automatically managed behind the scenes.
 
