@@ -72,7 +72,7 @@ GEM
       rack (>= 1.2, < 4)
       snaky_hash (~> 2.0)
       version_gem (~> 1.1)
-    rack (2.2.6.4)
+    rack (3.0.9.1)
     rake (13.0.6)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
