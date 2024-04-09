@@ -26,6 +26,8 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'oauth2', '~> 2.0'
   spec.add_dependency "rest-client", "~> 2.1"
+  # explicit rack dependency to avoid known vulns in 2.x versions
+  spec.add_dependency 'rack', "~> 3.0"
 
   spec.add_dependency 'colorize'
   spec.add_dependency 'config'
